@@ -1,0 +1,53 @@
+
+  @swagger
+  /Datas:
+    get:
+        summary: To get all Datas from mysql
+        description: This api is used to fetch the data from mysql
+        responses:
+            200:
+                 description: Sucess
+                 content:
+                      application/json:
+                            schema:
+                                type: array
+  /Datas/insert:
+    post:
+        summary: used to insert data to mysql
+        description: This api is used to insert the data from mysql
+        requestBody:
+            required: true
+            content:
+                 application/json:
+                       schema:
+                           type: json
+        responses:
+            200:
+                 description: Data Insert Sucessfully
+  /Datas/update:
+    put:
+        summary: used to update data to mysql
+        description: This api is used to update the data from mysql
+        requestBody:
+            required: true
+            content:
+                 application/json:
+                       schema:
+                           type: json
+        responses:
+            200:
+                 description: Data update Sucessfully
+  /Datas/delete:
+    delete:
+        summary: used to delete data to mysql
+        description: This api is used to delete the data from mysql
+        requestBody:
+            required: true
+            content:
+                 application/json:
+                       schema:
+                           type: json
+        responses:
+            200:
+                 description: Data delete Sucessfully
+ 
